@@ -223,13 +223,13 @@ def plot_figure7():
     fig, axes = plt.subplots(1, 3, figsize=(15, 4.5))
     
     # ===== (a) P/P₀ vs (h, θ) =====
-    h = np.linspace(10, 100, 50) * 1e-6          # 50 مقدار برای h
-    theta = np.radians(np.linspace(1, 20, 50))   # 50 مقدار برای θ
-    H, TH = np.meshgrid(h, theta)               # تبدیل به ماتریس 50×50
+    h = np.linspace(10, 100, 50) * 1e-6          
+    theta = np.radians(np.linspace(1, 20, 50))   
+    H, TH = np.meshgrid(h, theta)              
     
     P1 = np.exp(-100 * (0.2 / np.cos(TH) + 5e-5 * np.tan(TH) / (2 * H)))
     
-    # ✅ درست: h و theta (آرایه‌های اصلی) برای محورها
+
     contour1 = axes[0].contourf(h * 1e6, np.degrees(theta), P1, 20, cmap='viridis')
     axes[0].set_xlabel('Core Half-Thickness h (μm)', fontsize=10)
     axes[0].set_ylabel('Launch Angle θ (degrees)', fontsize=10)
@@ -244,7 +244,7 @@ def plot_figure7():
     P2 = np.exp(-100 * (0.2 / np.cos(np.radians(10)) + 
                 5e-5 * np.tan(np.radians(10)) / (2 * A * np.cos(PH))))
     
-    # ✅ درست: a و phi (آرایه‌های اصلی)
+   
     contour2 = axes[1].contourf(a * 1e6, np.degrees(phi), P2, 20, cmap='plasma')
     axes[1].set_xlabel('Core Radius a (μm)', fontsize=10)
     axes[1].set_ylabel('Azimuthal Angle φ (degrees)', fontsize=10)
@@ -260,7 +260,7 @@ def plot_figure7():
     condition = AS / (2 * 50e-6 * AA) <= 1
     theta_opt[condition] = np.degrees(np.arcsin(AS[condition] / (2 * 50e-6 * AA[condition])))
     
-    # ✅ درست: alpha_abs و alpha_sc (آرایه‌های اصلی)
+  
     contour3 = axes[2].contourf(alpha_abs, alpha_sc * 1e5, theta_opt, 20, cmap='coolwarm')
     axes[2].set_xlabel('Absorption Coefficient α_abs (m⁻¹)', fontsize=10)
     axes[2].set_ylabel('Scattering Coefficient α_sc (×10⁻⁵)', fontsize=10)
