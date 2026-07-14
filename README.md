@@ -3,15 +3,15 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## 📖 Overview
+## Overview
 
 This repository contains the complete code implementation for the paper:
 
 **"A Generalized Reflection-Count-Based Geometrical Optics Framework for Attenuation Analysis in Multimode Waveguides"**
 
-📌 **Manuscript Status:** Submitted to *Journal of the Optical Society of America B (JOSA B)* – Under Quality Check (July 2026)
+**Manuscript Status:** Submitted to *Journal of the Optical Society of America B (JOSA B)* – Under Quality Check (July 2026)
 
-## 📊 Mathematical Model
+## Mathematical Model
 
 The total number of internal reflections in a planar waveguide is:
 
@@ -21,7 +21,7 @@ The transmitted power is modeled as:
 
 $$P(L, \theta) = P_0 \exp\left[-L \left( \frac{\alpha_{abs}}{\cos\theta} + \frac{\alpha_{sc} \tan\theta}{2h} \right)\right]$$
 
-## 🚀 Features
+## Features
 
 - ✅ Analytical calculation of internal reflection count
 - ✅ Two-parameter attenuation model
@@ -32,7 +32,7 @@ $$P(L, \theta) = P_0 \exp\left[-L \left( \frac{\alpha_{abs}}{\cos\theta} + \frac
 - ✅ Monte Carlo ray-tracing simulation
 - ✅ Comprehensive figure generation
 
-## 📦 Installation
+## Installation
 
 ```bash
 git clone https://github.com/arazinalti/waveguide-reflection-framework.git
@@ -40,7 +40,7 @@ cd waveguide-reflection-framework
 pip install -r requirements.txt
 ```
 
-## 🎯 Quick Start
+## Quick Start
 
 ```python
 from src.waveguide import Waveguide
@@ -54,13 +54,13 @@ print(f"Reflections: {N:.2e}")
 print(f"Power: {P:.4f}")
 ```
 
-## 📊 Generate Paper Figures
+## Generate Paper Figures
 
 ```bash
 python figures/generate_figures.py
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 waveguide-reflection-framework/
@@ -77,7 +77,7 @@ waveguide-reflection-framework/
 └── README.md
 ```
 
-## 📝 Citation
+## Citation
 
 ```bibtex
 @article{soltani2026waveguide,
@@ -89,10 +89,10 @@ waveguide-reflection-framework/
 }
 ```
 
-## 📄 License
+## License
 
 MIT License - see [LICENSE](LICENSE) file.
 
-## 📧 Contact
+## Contact
 
 Abolfazl Soltani - araz.soltani2007@gmail.com
