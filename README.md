@@ -9,8 +9,6 @@ This repository contains the complete code implementation for the paper:
 
 **"A Generalized Reflection-Count-Based Geometrical Optics Framework for Attenuation Analysis in Multimode Waveguides"**
 
-**Manuscript Status:** Submitted to *Journal of the Optical Society of America B (JOSA B)* – Under Quality Check (July 2026)
-
 ## Mathematical Model
 
 The total number of internal reflections in a planar waveguide is:
